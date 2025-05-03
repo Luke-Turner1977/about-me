@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--"Last Updated: April 30, 2025/1840"-->
+
+<title>About Me</title>
+
+<!--CSS location-->
+    <link rel="stylesheet" type="text/css" href="LukeTurner_formstyles.css">
+
+<!--JavaScript location-->
+    <script src="LukeTurner_forms.js"></script>
+</head>
+
+<div align="center">
+<a href="https://www.ecok.edu"><img src="images/ECUlogo.png" alt="ECU Logo with full color orange/black styling"></a>
+</div>
+
+<body>
+
+<h1>Navigation</h1>
+<nav><ul>
+    <li><a href="#About Me">About Me</a></li>
+    <li><a href="#Classes">Classes</a></li>
+    <li><a href="#internetprogramming">CMPSC 2323</a></li>
+    <li><a href="#algorithm">CPMSA 3103</a></li>
+    <li><a href="#Hobbies">Hobbies</a></li>
+    <li><a href="#JavaScript">JavaScript Examples</a></li><br>
+    <hr width="75%">
+</ul>
+</nav>
+
+<section id="About Me">
+<h2>About Me</h2>
+<img src="images/birthday.jpg" height="350" width="400" alt="My wife and I at her birthday party with my cousin and his wife">
+
+    <p>
+        <b>My name is Luke Turner</b><br>
+        <i>My major is Computer Sciences</i><br>
+        <u>I am a Junior</u><br>
+        I also am the Electrical Supervisor at Holcim<br>
+        <hr width="90%">
+    </p>
+</section>
+<section id="Classes">
+        <p>
+    <h3>This semester I am taking the following classes:</h3>
+</section>
+
+<br>
+<div class="container">
+    <div class="grid-1">
+    <section id="internetprogramming">
+        <h2>CMPSC 2323 Internet Programing</h2>
+        <p>We are discussing html programming and building this webpage.  I enjoy seeing the progress visibly as I go. Currently working with HTML forms. <br>
+            This page will continue to get better as the class continues.</p>
+    </section>
+    </div>
+
+    <div class="grid-2">
+    <section id="algorithm">
+        <h2>CPMSA 3103 Algorithm Analysis</h2>
+        <p>I learned different methods of analyzing algorithms and what makes each method accurate. This class is now over and I received a B for my efforts.</p>
+    </section>
+    </div>
+</div>
+<br>
+<hr width="75%">
+<br>
+          
+<section id="Hobbies">
+    
+    <iframe width="357" height="635" src="https://www.youtube.com/embed/VUApsKMup0M" title="Clerfclay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="Grandkids singing Clerfclay my wife"></iframe>
+    
+    <h2>My hobbies are:</h2>
+    <ul>
+        <li>Watching OU sports (sorry, not sorry)</li>
+        <li>Boating</li>
+        <li>Spending time with my grandkids</li>
+    </ul>
+    </p>
+</section>
+
+<section id="JavaScript">
+    <hr width="75">
+    <div>
+        <h3>Javascript Examples:</h3>
+    </div>
+<div class="container">
+<!--Arithmetic Form-->
+    <div class="grid-3">
+        <section id="arithmetic">
+            <h2>Arithmetic</h2>
+            <p>Perform Basic arithmetic.</p>
+
+            <form name="ArithmeticForm">
+                <label>First Number:</label>
+                    <input type="number" name="firstarithmeticnumber" placeholder="1"/>
+                <br>
+                <label>Second Number:</label>
+                    <input type="number" name="secondarithmeticnumber" placeholder="2"/>
+                <br>
+                <br>
+                <legend>Select Operator:</legend><br>
+                    <input type="radio" id="addition" name="arithmeticoperator" value="Addition" checked>
+                        <label for="addition">Addition</label><br>
+                    <input type="radio" id="subtraction" name="arithmeticoperator" value="Subtraction">
+                        <label for="addition">Subtraction</label><br>
+                    <input type="radio" id="multiplication" name="arithmeticoperator" value="Multiplication">
+                        <label for="addition">Multiplication</label><br>
+                    <input type="radio" id="division" name="arithmeticoperator" value="Division">
+                        <label for="addition">Division</label><br>
+                <br>
+                <button class="button" onclick="performArithmetic()">Calculate</button>
+            </form>          
+        </section>
+    </div>
+<!--Factorial Form-->
+    <div class="grid-4">
+    <section id="factorial">
+        <h2>Factorial</h2>
+        <p>Use this script to find the factorial of a positive number.</p>
+
+        <form name="Factorial">
+            <label>Enter Number:</label>
+            <input type="number" name="factorialnumber" placeholder="1"/>
+            <button class="button" onclick="performFactorial()">Calculate</button>
+        </form>
+        <br>
+        <div id="factorial-output"></div><br>
+    </section>
+    </div>
+<!--Fibonacci Form-->
+    <div class="grid-5">
+    <section id="fibonacci">
+        <h2>Calculate Nth Fibonacci Number</h2>
+        <p>Use this script to find the Nth Fibonacci Numbers.</p>
+
+        <form name="Fibonacci">
+            <label>Enter Number:</label>
+            <input type="number" name="fibonaccinumber" placeholder="1"/>
+            <button class="button" onclick="performFibonacci()">Calculate</button>
+        </form>
+        <br>
+    <div id="fib-output"></div><br>
+    </section>
+    </div>
+    
+<!--Range Form-->
+    <div class="grid-6">
+    <section id="range">
+        <h2>Find the Range</h2>
+        <P>Use this script to produce the range of three numbers.</P>
+
+        <form name="range">        
+            <label>First Number:</label>
+                <input type="number" name="firstrangenumber" placeholder="1"/>
+            <br>
+            <label>Second Number:</label>
+                <input type="number" name="secondrangenumber" placeholder="2"/>
+            <br>
+            <label>Third Number:</label>
+                <input type="number" name="thirdrangenumber" placeholder="3"/>
+            <br>
+            <br>
+            <button class="button" onclick="performRange()">Calculate</button>
+        </form>
+    </section>
+    </div>
+
+<!--Mailing List Form-->
+    <div class="grid-7">
+    <section id="mailinglist">
+        <h2>Join our Mailing List</h2>
+        <p>We would love to keep you updated!</p>
+        <form name="mailinglist">
+            <label>First Name: </label>
+                <input type="text" name="firstname" placeholder="John"/><br>
+            <label>Last Name:  </label>
+                <input type="text" name="lastname" placeholder="Doe"/><br>
+            <label>Email:      </label>
+                <input type="email" name="email" placeholder="john.doe@gmail.com"/><br>
+            <label>ZIP Code:   </label>
+                <input type="number" name="zipcode" placeholder="112345"/><br>
+            <br>
+            <button type="button" onclick="performmailinglist()">Sign Me UP</button>
+            <button type="button" onclick="performclearform()">Clear</button>
+        </form>
+    </section>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="signupList"></div>
+<br>
+<br>  
+
+</section>
+<div class="footer">
+    <h3><a href="https://www.ecok.edu">ECU Home Page</a></h3>
+<br>
+<br>
+</div>
+</body>
+
+</html>
