@@ -69,9 +69,6 @@ function performFibonacci() {
     } else if (fibbonaccinumber === 1){
         outputDiv.innerHTML = `<h3>The First Fibonacci number is 1</h3>`;
         return;
-    } else if (fibbonaccinumber === 2){
-        outputDiv.innerHTML = `<h3>The Second Fibonacci number is 1</h3>`;
-        return;
     } else {
             for (i = 2; i <= fibonaccinumber; i++) {
                 result = fib1 + fib2;
