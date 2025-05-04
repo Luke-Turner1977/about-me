@@ -66,7 +66,7 @@ function performFibonacci() {
     } else if (fibonaccinumber === 0){
         outputDiv.innerHTML = `<h3>The Nth Fibonacci number for 0 is 0</h3>`;
         return;
-    } else if (fibbonaccinumber === 1){
+    } else if (fibonaccinumber === 1){
         outputDiv.innerHTML = `<h3>The First Fibonacci number is 1</h3>`;
         return;
     } else {
