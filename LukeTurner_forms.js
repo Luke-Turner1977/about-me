@@ -75,9 +75,9 @@ function performFibonacci() {
                 fib1 = fib2;
                 fib2 = result;
             }
-    }
-    // Insert the Fibonacci numbers
+        // Insert the Fibonacci numbers
     outputDiv.innerHTML = `<h3>The Nth Fibonnaci number for ${fibonaccinumber} is ${result}</h3>`;
+    }
 }
 
 //Question 4
